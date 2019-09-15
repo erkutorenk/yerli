@@ -12,11 +12,8 @@ bot.on('message', (msg) => {
           text: 'Behzat Ç.',
           url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
         },{
-          text: 'Music',
-          callback_data: 'music'
-        },{
-          text: 'Cute monkeys',
-          callback_data: 'cute-monkeys'
+          text: 'Yerli Diziler',
+          url: 'https://t.me/joinchat/AAAAAErjynpH6TWT0buuJw'
         }
       ]]
     }
