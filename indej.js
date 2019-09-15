@@ -4,10 +4,7 @@ const token = '885225327:AAE98jWiyaELsIwOsmuHCeGKOqWO6l19IHM'
 
 const bot = new TelegramBot(token, {polling: true})
 
-let siteUrl;
-bot.onText(/\/start (.+)/, (msg, match) => {
-  siteUrl = match[1];
-  bot.sendMessage(msg.chat.id,'Linklere buradan ulaşabilirsiniz', {
+bot.sendMessage(msg.chat.id,'Linklere buradan ulaşabilirsiniz', {
     reply_markup: {
       inline_keyboard: [[
         {
