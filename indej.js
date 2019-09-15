@@ -9,8 +9,8 @@ bot.on('message', (msg) => {
     reply_markup: {
       inline_keyboard: [[
         {
-          text: 'Development',
-          callback_data: 'development'
+          text: 'Behzat Ç.',
+          url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
         },{
           text: 'Music',
           callback_data: 'music'
