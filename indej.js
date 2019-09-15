@@ -5,7 +5,7 @@ const token = '885225327:AAE98jWiyaELsIwOsmuHCeGKOqWO6l19IHM'
 const bot = new TelegramBot(token, {polling: true})
 
 bot.on('message', (msg) => {
-  bot.sendMessage(msg.chat.id, 'Gizli kanalların davet linklerine alttaki butonlardan ulaşabilirsiniz.', {
+  bot.sendMessage(msg.chat.id, 'Gizli kanalların davet bağlantılarına alttaki butonlardan ulaşabilirsiniz.', {
     reply_markup: {
       inline_keyboard: [[
         {
