@@ -31,6 +31,20 @@ bot.on('message', (msg) => {
     var bağlantılar = "bağlantılar";
     if (msg.text.toString().toLowerCase().indexOf(bağlantılar) === 0) {
         bot.sendMessage(msg.chat.id, "İyi Seyirler " + msg.from.first_name);
+         reply_markup: {
+      inline_keyboard: [[
+        {
+          text: 'Behzat Ç.',
+          url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
+        },{
+          text: 'Yerli Diziler',
+          url: 'https://t.me/joinchat/AAAAAErjynpH6TWT0buuJw'
+        }
+      ]]
+    }
+  });
+});             
+
         bot.sendMessage(msg.chat.id, bağlantılar_collection[rand_bağlantılar()]);
     }
 });
