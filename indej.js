@@ -11,23 +11,5 @@ bot.onText(/^\/start$/, function (msg) {
             "keyboard": [["Bağlantılar"], ["Grubumuz", "İletişim"]]
         }
     });
-
 });
 
-bot.on('message', (msg) => {
-    var bağlantılar = "Bağlantılar";
-    if (msg.text.toString().toLowerCase().indexOf(bağlantılar) === 0) {
-        console.log;
-        bot.sendMessage(msg.chat.id, "Bakımda ", {
-            "inline_keyboard": [[
-        {
-          text: 'Behzat Ç.',
-          url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
-        },{
-          text: 'Yerli Diziler',
-          url: 'https://t.me/joinchat/AAAAAErjynpH6TWT0buuJw'
-        }
-      ]]
-    }
-  });
-});         
