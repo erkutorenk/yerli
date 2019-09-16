@@ -15,26 +15,26 @@ bot.onText(/\/start/, (msg) => {
 
 });
 
-var rand_electro = function () {
-    return Math.floor(Math.random() * electro_collection.length);
+var rand_bağlantılar = function () {
+    return Math.floor(Math.random() * bağlantılar_collection.length);
 }
 
-var rand_house = function () {
-    return Math.floor(Math.random() * house_collection.length);
+var rand_grubumuz = function () {
+    return Math.floor(Math.random() * grubumuz_collection.length);
 }
 
 bot.on('message', (msg) => {
-    var electro = "Bağlantılar";
-    if (msg.text.toString().toLowerCase().indexOf(electro) === 0) {
+    var bağlantılar = "Bağlantılar";
+    if (msg.text.toString().toLowerCase().indexOf(bağlantılar) === 0) {
         bot.sendMessage(msg.chat.id, "Bakımda " + msg.from.first_name);
-        bot.sendMessage(msg.chat.id, electro_collection[rand_electro()]);
+        bot.sendMessage(msg.chat.id, bağlantılar_collection[rand_bağlantılar()]);
     }
 });
 
 
 bot.on('message', (msg) => {
-    var house = "Grubumuz";
-    if (msg.text.toString().toLowerCase().indexOf(house) === 0) {
+    var grubumuz = "Grubumuz";
+    if (msg.text.toString().toLowerCase().indexOf(grubumuz) === 0) {
         bot.sendMessage(msg.chat.id, "Bakımda ", {
             "reply_markup": {
                 "keyboard": [["Deneme"], ["Deneme"]]
