@@ -41,5 +41,4 @@ bot.on('message', (msg) => {
         });
     }
 });
-Above is my telegram
 
