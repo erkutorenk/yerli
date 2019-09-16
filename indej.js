@@ -19,3 +19,17 @@ bot.on('message', (msg) => {
     }
   });
 });
+
+
+bot.onText(/^\/start$/, function (msg) {
+    const opts = {
+        reply_to_message_id: msg.message_id,
+        reply_markup: {
+            resize_keyboard: true,
+            one_time_keyboard: true,
+            keyboard: [["uno :+1:"],["uno \ud83d\udc4d", "due"]
+        }
+    };
+
+    bot.sendMessage(msg.chat.id, "I'm a test robot", opts);
+});
