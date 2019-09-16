@@ -9,7 +9,7 @@ bot.onText(/\/start/, (msg) => {
     bot.sendMessage(msg.chat.id, "Merhaba, " + msg.from.first_name + ". Gizli kanalların davet bağlantılarına alttaki butonlardan ulaşabilirsin. ;)", {
         "reply_markup": {
              resize_keyboard: true,
-            "keyboard": [["Bağlantılar", "Grubumuz"]]
+            "keyboard": [["Bağlantılar"], ["Grubumuz", "İletişim"]]
         }
     });
 
