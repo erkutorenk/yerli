@@ -7,16 +7,9 @@ const bot = new TelegramBot(token, {polling: true})
 
 bot.onText(/^\/start$/, function (msg) {
   bot.sendMessage(msg.chat.id, "Merhaba, " + msg.from.first_name + ". Gizli kanalların davet bağlantılarına alttaki butonlardan ulaşabilirsin.", {
-   reply_markup: {
-      inline_keyboard: [[
-        {
-          text: 'Behzat Ç.',
-          url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
-        },{
-          text: 'Yerli Diziler',
-          url: 'https://t.me/joinchat/AAAAAErjynpH6TWT0buuJw'
+   "reply_markup": {
+            "keyboard": [["Bağlantılar"], ["Grubumuz", "İletişim"]]
         }
-      ]]
-    }
-  });
-});               
+    });
+
+});
