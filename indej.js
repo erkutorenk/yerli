@@ -50,12 +50,20 @@ bot.on('message', (msg) => {
 bot.on('message', (msg) => {
     var grubumuz = "grubumuz";
     if (msg.text.toString().toLowerCase().indexOf(grubumuz) === 0) {
+        bot.sendMessage(msg.chat.id, "t.me/dizifilm");
+    }
+});
+
+
+bot.on('message', (msg) => {
+    var iletişim = "iletişim";
+    if (msg.text.toString().toLowerCase().indexOf(iletişim) === 0) {
         bot.sendMessage(msg.chat.id, "Yabancı Dizi/Film.", {
          reply_markup: {
             inline_keyboard: [[
               {
-                text: 'Grubumuz',
-                url: 't.me/dizifilm'
+                text: 'Müşteri Hizmetleri',
+                url: 't.me/dizifilms'
               }
             ]]
           }
@@ -64,9 +72,4 @@ bot.on('message', (msg) => {
 });
 
 
-bot.on('message', (msg) => {
-    var iletişim = "iletişim";
-    if (msg.text.toString().toLowerCase().indexOf(iletişim) === 0) {
-        bot.sendMessage(msg.chat.id, "t.me/dizifilms");
-    }
-});
+
