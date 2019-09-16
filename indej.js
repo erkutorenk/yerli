@@ -11,7 +11,7 @@ bot.onText(/^\/start$/, function (msg) {
         reply_markup: {
             resize_keyboard: true,
             one_time_keyboard: true,
-            keyboard: [["Bağlantılar"],["Grubumuz", "İletişim"]
+            keyboard: [["Bağlantılar"],["Grubumuz", "İletişim"]]
         }
     };
 
