@@ -9,7 +9,7 @@ bot.onText(/\/start/, (msg) => {
     bot.sendMessage(msg.chat.id, "Merhaba, " + msg.from.first_name + ". Gizli kanalların davet bağlantılarına alttaki butonlardan ulaşabilirsin. ;)", {
         "reply_markup": {
              resize_keyboard: true,
-            "keyboard": [["Bağlantılar"], ["Grubumuz", "İletişim"]]
+            "keyboard": [["Bağlantılar"], ["Grubumuz", "iletişim"]]
         }
     });
 
@@ -23,8 +23,8 @@ var rand_grubumuz = function () {
     return Math.floor(Math.random() * grubumuz_collection.length);
 }
 
-var rand_İletişim = function () {
-    return Math.floor(Math.random() * İletişim_collection.length);
+var rand_iletişim = function () {
+    return Math.floor(Math.random() * iletişim_collection.length);
 }
 
 bot.on('message', (msg) => {
@@ -46,10 +46,10 @@ bot.on('message', (msg) => {
 
 
 bot.on('message', (msg) => {
-    var İletişim = "İletişim";
-    if (msg.text.toString().toLowerCase().indexOf(İletişim) === 0) {
+    var iletişim = "iletişim";
+    if (msg.text.toString().toLowerCase().indexOf(iletişim) === 0) {
         bot.sendMessage(msg.chat.id, "İyi Seyirler " + msg.from.first_name);
-        bot.sendMessage(msg.chat.id, İletişim_collection[rand_İletişim()]);
+        bot.sendMessage(msg.chat.id, iletişim_collection[rand_iletişim()]);
     }
 });
 
