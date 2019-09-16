@@ -39,7 +39,6 @@ bot.on('message', (msg) => {
     var grubumuz = "grubumuz";
     if (msg.text.toString().toLowerCase().indexOf(grubumuz) === 0) {
         bot.sendMessage(msg.chat.id, "t.me/dizifilm");
-        bot.sendMessage(msg.chat.id, grubumuz_collection[rand_grubumuz()]);
     }
 });
 
@@ -48,6 +47,5 @@ bot.on('message', (msg) => {
     var iletişim = "iletişim";
     if (msg.text.toString().toLowerCase().indexOf(iletişim) === 0) {
         bot.sendMessage(msg.chat.id, "t.me/dizifilms");
-        bot.sendMessage(msg.chat.id, iletişim_collection[rand_iletişim()]);
     }
 });
