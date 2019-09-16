@@ -46,10 +46,10 @@ bot.on('message', (msg) => {
 
 
 bot.on('message', (msg) => {
-    var iletişim = "iletişim";
-    if (msg.text.toString().toLowerCase().indexOf(iletişim) === 0) {
+    var İletişim = "İletişim";
+    if (msg.text.toString().toLowerCase().indexOf(İletişim) === 0) {
         bot.sendMessage(msg.chat.id, "İyi Seyirler " + msg.from.first_name);
-        bot.sendMessage(msg.chat.id, iletişim_collection[rand_iletişim()]);
+        bot.sendMessage(msg.chat.id, İletişim_collection[rand_İletişim()]);
     }
 });
 
