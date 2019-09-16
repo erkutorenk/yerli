@@ -31,7 +31,6 @@ bot.on('message', (msg) => {
     var bağlantılar = "bağlantılar";
     if (msg.text.toString().toLowerCase().indexOf(bağlantılar) === 0) {
         bot.sendMessage(msg.chat.id, "İyi Seyirler " + msg.from.first_name);
-        bot.sendMessage(msg.chat.id, bağlantılar_collection[rand_bağlantılar()]);
     }
 });
 
