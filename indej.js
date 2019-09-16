@@ -7,7 +7,7 @@ const bot = new TelegramBot(token, {polling: true})
 
 bot.onText(/^\/start$/, function (msg) {
     const opts = {
-        reply_to_message_id: msg.message_id,
+        msg.message_id,
         reply_markup: {
             resize_keyboard: true,
             one_time_keyboard: true,
@@ -15,8 +15,8 @@ bot.onText(/^\/start$/, function (msg) {
         }
     };
 
-  bot.sendMessage(msg.chat.id, "Gizli kanalların davet bağlantılarına alttaki butonlardan ulaşabilirsiniz.", opts, {
-    reply_markup: {
+ bot.sendMessage(msg.chat.id, "Gizli kanalların davet bağlantılarına alttaki butonlardan ulaşabilirsiniz.", opts, {
+   reply_markup: {
       inline_keyboard: [[
         {
           text: 'Behzat Ç.',
