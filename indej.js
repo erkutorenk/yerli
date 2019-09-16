@@ -19,8 +19,8 @@ var rand_elek = function () {
     return Math.floor(Math.random() * elek_collection.length);
 }
 
-var rand_house = function () {
-    return Math.floor(Math.random() * house_collection.length);
+var rand_grubumuz = function () {
+    return Math.floor(Math.random() * grubumuz_collection.length);
 }
 
 bot.on('message', (msg) => {
@@ -33,8 +33,8 @@ bot.on('message', (msg) => {
 
 
 bot.on('message', (msg) => {
-    var ouse = "ouse";
-    if (msg.text.toString().toLowerCase().indexOf(ouse) === 0) {
+    var grubumuz = "grubumuz";
+    if (msg.text.toString().toLowerCase().indexOf(grubumuz) === 0) {
         bot.sendMessage(msg.chat.id, "Here is your house song ", {
             "reply_markup": {
                 "keyboard": [["More house"], ["Back to choose style"]]
