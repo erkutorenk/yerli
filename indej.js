@@ -12,6 +12,13 @@ bot.onText(/^\/start$/, function (msg) {
             resize_keyboard: true,
             one_time_keyboard: true,
             keyboard: [["Bağlantılar"],["Grubumuz", "İletişim"]]
+            inline_keyboard: [[
+        {
+          text: 'Behzat Ç.',
+          url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
+        },{
+          text: 'Yerli Diziler',
+          url: 'https://t.me/joinchat/AAAAAErjynpH6TWT0buuJw'
         }
     };
 
