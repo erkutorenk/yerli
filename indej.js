@@ -24,20 +24,20 @@ var rand_house = function () {
 }
 
 bot.on('message', (msg) => {
-    var electro = "electro";
+    var electro = "Bağlantılar";
     if (msg.text.toString().toLowerCase().indexOf(electro) === 0) {
-        bot.sendMessage(msg.chat.id, "Here is your electro song " + msg.from.first_name);
+        bot.sendMessage(msg.chat.id, "Bakımda " + msg.from.first_name);
         bot.sendMessage(msg.chat.id, electro_collection[rand_electro()]);
     }
 });
 
 
 bot.on('message', (msg) => {
-    var house = "house";
+    var house = "Grubumuz";
     if (msg.text.toString().toLowerCase().indexOf(house) === 0) {
-        bot.sendMessage(msg.chat.id, "Here is your house song ", {
+        bot.sendMessage(msg.chat.id, "Bakımda ", {
             "reply_markup": {
-                "keyboard": [["More house"], ["Back to choose style"]]
+                "keyboard": [["Deneme"], ["Deneme"]]
             }
         });
     }
