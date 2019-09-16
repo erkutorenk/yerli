@@ -15,29 +15,29 @@ bot.onText(/\/start/, (msg) => {
 
 });
 
-var rand_bağlantılar = function () {
-    return Math.floor(Math.random() * bağlantılar_collection.length);
+var rand_electro = function () {
+    return Math.floor(Math.random() * electro_collection.length);
 }
 
-var rand_grubumuz = function () {
-    return Math.floor(Math.random() * grubumuz_collection.length);
+var rand_house = function () {
+    return Math.floor(Math.random() * house_collection.length);
 }
 
 bot.on('message', (msg) => {
-    var bağlantılar = "Bağlantılar";
-    if (msg.text.toString().toLowerCase().indexOf(bağlantılar) === 0) {
-        bot.sendMessage(msg.chat.id, "Bakımda " + msg.from.first_name);
-        bot.sendMessage(msg.chat.id, bağlantılar_collection[rand_bağlantılar()]);
+    var electro = "electro";
+    if (msg.text.toString().toLowerCase().indexOf(electro) === 0) {
+        bot.sendMessage(msg.chat.id, "Here is your electro song " + msg.from.first_name);
+        bot.sendMessage(msg.chat.id, electro_collection[rand_electro()]);
     }
 });
 
 
 bot.on('message', (msg) => {
-    var grubumuz = "Grubumuz";
-    if (msg.text.toString().toLowerCase().indexOf(grubumuz) === 0) {
-        bot.sendMessage(msg.chat.id, "Bakımda ", {
+    var house = "house";
+    if (msg.text.toString().toLowerCase().indexOf(house) === 0) {
+        bot.sendMessage(msg.chat.id, "Here is your house song ", {
             "reply_markup": {
-                "keyboard": [["Deneme"], ["Deneme"]]
+                "keyboard": [["More house"], ["Back to choose style"]]
             }
         });
     }
