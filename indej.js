@@ -15,5 +15,17 @@ bot.onText(/^\/start$/, function (msg) {
         }
     };
 
-    bot.sendMessage(msg.chat.id, "Bakımda", opts);
+    bot.sendMessage(msg.chat.id, 'Gizli kanalların davet bağlantılarına alttaki butonlardan ulaşabilirsiniz.', {
+    reply_markup: {
+      inline_keyboard: [[
+        {
+          text: 'Behzat Ç.',
+          url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
+        },{
+          text: 'Yerli Diziler',
+          url: 'https://t.me/joinchat/AAAAAErjynpH6TWT0buuJw'
+        }
+      ]]
+    }
+  });
 });
