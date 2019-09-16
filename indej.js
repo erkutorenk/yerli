@@ -15,8 +15,8 @@ bot.onText(/\/start/, (msg) => {
 
 });
 
-var rand_electro = function () {
-    return Math.floor(Math.random() * electro_collection.length);
+var rand_elek = function () {
+    return Math.floor(Math.random() * elek_collection.length);
 }
 
 var rand_house = function () {
@@ -25,16 +25,16 @@ var rand_house = function () {
 
 bot.on('message', (msg) => {
     var elek = "elek";
-    if (msg.text.toString().toLowerCase().indexOf(electro) === 0) {
+    if (msg.text.toString().toLowerCase().indexOf(elek) === 0) {
         bot.sendMessage(msg.chat.id, "Here is your electro song " + msg.from.first_name);
-        bot.sendMessage(msg.chat.id, electro_collection[rand_electro()]);
+        bot.sendMessage(msg.chat.id, elek_collection[rand_elek()]);
     }
 });
 
 
 bot.on('message', (msg) => {
     var ouse = "ouse";
-    if (msg.text.toString().toLowerCase().indexOf(house) === 0) {
+    if (msg.text.toString().toLowerCase().indexOf(ouse) === 0) {
         bot.sendMessage(msg.chat.id, "Here is your house song ", {
             "reply_markup": {
                 "keyboard": [["More house"], ["Back to choose style"]]
