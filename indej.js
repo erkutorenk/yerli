@@ -8,6 +8,8 @@ const bot = new TelegramBot(token, {polling: true})
 bot.onText(/^\/start$/, function (msg) {
   bot.sendMessage(msg.chat.id, "Merhaba, " + msg.from.first_name + ". Gizli kanalların davet bağlantılarına alttaki butonlardan ulaşabilirsin.", {
    reply_markup: {
+            resize_keyboard: true,
+            one_time_keyboard: true,
             keyboard: [["Bağlantılar"], ["Grubumuz", "İletişim"]]
         }
     });
