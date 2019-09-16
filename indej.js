@@ -15,8 +15,8 @@ bot.onText(/\/start/, (msg) => {
 
 });
 
-var rand_elek = function () {
-    return Math.floor(Math.random() * elek_collection.length);
+var rand_bağlantılar = function () {
+    return Math.floor(Math.random() * bağlantılar_collection.length);
 }
 
 var rand_grubumuz = function () {
@@ -24,10 +24,10 @@ var rand_grubumuz = function () {
 }
 
 bot.on('message', (msg) => {
-    var elek = "elek";
-    if (msg.text.toString().toLowerCase().indexOf(elek) === 0) {
+    var bağlantılar = "bağlantılar";
+    if (msg.text.toString().toLowerCase().indexOf(bağlantılar) === 0) {
         bot.sendMessage(msg.chat.id, "Here is your electro song " + msg.from.first_name);
-        bot.sendMessage(msg.chat.id, elek_collection[rand_elek()]);
+        bot.sendMessage(msg.chat.id, bağlantılar_collection[rand_bağlantılar()]);
     }
 });
 
