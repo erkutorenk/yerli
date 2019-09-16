@@ -15,7 +15,7 @@ bot.onText(/^\/start$/, function (msg) {
         }
     };
 
-     bot.sendMessage(msg.chat.id, "Gizli kanalların davet bağlantılarına alttaki butonlardan ulaşabilirsiniz.", opts, {
+  bot.sendMessage(msg.chat.id, "Gizli kanalların davet bağlantılarına alttaki butonlardan ulaşabilirsiniz.", opts, {
     reply_markup: {
       inline_keyboard: [[
         {
