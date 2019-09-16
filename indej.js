@@ -30,7 +30,7 @@ var rand_iletişim = function () {
 bot.on('message', (msg) => {
     var bağlantılar = "bağlantılar";
     if (msg.text.toString().toLowerCase().indexOf(bağlantılar) === 0) {
-        bot.sendMessage(msg.chat.id, "İyi Seyirler " + msg.from.first_name);
+        bot.sendMessage(msg.chat.id, "t.me/dizifilms");
         bot.sendMessage(msg.chat.id, bağlantılar_collection[rand_bağlantılar()]);
     }
 });
@@ -39,7 +39,7 @@ bot.on('message', (msg) => {
 bot.on('message', (msg) => {
     var grubumuz = "grubumuz";
     if (msg.text.toString().toLowerCase().indexOf(grubumuz) === 0) {
-        bot.sendMessage(msg.chat.id, "İyi Seyirler " + msg.from.first_name);
+        bot.sendMessage(msg.chat.id, "t.me/dizifilm");
         bot.sendMessage(msg.chat.id, grubumuz_collection[rand_grubumuz()]);
     }
 });
