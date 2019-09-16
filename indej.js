@@ -23,8 +23,8 @@ var rand_grubumuz = function () {
     return Math.floor(Math.random() * grubumuz_collection.length);
 }
 
-var rand_iletişim = function () {
-    return Math.floor(Math.random() * iletişim_collection.length);
+var rand_İletişim = function () {
+    return Math.floor(Math.random() * İletişim_collection.length);
 }
 
 bot.on('message', (msg) => {
