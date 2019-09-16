@@ -30,7 +30,7 @@ var rand_iletişim = function () {
 bot.on('message', (msg) => {
     var bağlantılar = "bağlantılar";
     if (msg.text.toString().toLowerCase().indexOf(bağlantılar) === 0) {
-        bot.sendMessage(msg.chat.id, "İyi Seyirler " + msg.from.first_name + ". grubumuzu takip etmeyi unutma.", {
+        bot.sendMessage(msg.chat.id, "İyi Seyirler " + msg.from.first_name + ". \n grubumuzu takip etmeyi unutma.", {
          reply_markup: {
             inline_keyboard: [[
               {
