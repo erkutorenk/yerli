@@ -6,7 +6,7 @@ const bot = new TelegramBot(token, {polling: true})
 
 
 bot.onText(/\/start/, (msg) => {
-    bot.sendMessage(msg.chat.id, "Merhaba, " + msg.from.first_name + ". Gizli kanalların davet bağlantılarına alttaki butonlardan ulaşabilirsin. ;)", {
+    bot.sendMessage(msg.chat.id, "<b>Merhaba</b>, " + msg.from.first_name + ". Gizli kanalların davet bağlantılarına alttaki butonlardan ulaşabilirsin. ;)", {
         "reply_markup": {
              resize_keyboard: true,
             "keyboard": [["Bağlantılar"], ["Grubumuz", "iletişim"]]
