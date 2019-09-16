@@ -50,7 +50,16 @@ bot.on('message', (msg) => {
 bot.on('message', (msg) => {
     var grubumuz = "grubumuz";
     if (msg.text.toString().toLowerCase().indexOf(grubumuz) === 0) {
-        bot.sendMessage(msg.chat.id, "t.me/dizifilm");
+        bot.sendMessage(msg.chat.id, "Yabancı Dizi/Film.", {
+         reply_markup: {
+            inline_keyboard: [[
+              {
+                text: 'Grubumuz',
+                url: 't.me/dizifilm'
+              }
+            ]]
+          }
+        });           
     }
 });
 
