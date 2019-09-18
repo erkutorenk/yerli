@@ -39,7 +39,8 @@ bot.on('message', (msg) => {
     if (msg.text.toString().toLowerCase().indexOf(kanallar) === 0) {
         bot.sendMessage(msg.chat.id, "Here is your house song ", {
             "reply_markup": {
-                "keyboard": [["Yabancı"], ["Yerli"]]
+                 resize_keyboard: true,
+                "keyboard": [["Yabancı", "Yerli"]]
             }
         });
     }
