@@ -142,6 +142,24 @@ bot.on('message', (msg) => {
                 text: 'Dark',
                 url: 'http://t.me/darkdizi' 
               }
+           ],
+           [
+              {
+                text: 'Black Mirror',
+                url: 'http://t.me/blackmirrortr'
+              },{
+                text: 'Mr. Robot',
+                url: 'http://t.me/mrrobottr' 
+              }
+           ],
+           [
+              {
+                text: 'Big Little Lies',
+                url: 'http://t.me/biglittleliestr'
+              },{
+                text: "The Handmaid's Tale",
+                url: 'http://t.me/handmaidstaletr' 
+              }
             ]]
           }
         });           
