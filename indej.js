@@ -9,7 +9,7 @@ bot.onText(/\/start/, (msg) => {
     bot.sendMessage(msg.chat.id, "Merhaba, " + msg.from.first_name + ". Kanallarımıza alttaki butonlardan ulaşabilirsin. ;)", {
         "reply_markup": {
              resize_keyboard: true,
-            "keyboard": [["Kanallar"], ["Grubumuz", "iletişim"]]
+            "keyboard": [["Kanallar"], ["Grubumuz", "iletişim", "Gizli Kanallar" ]]
         }
     });
 
@@ -26,6 +26,11 @@ var rand_grubumuz = function () {
 var rand_iletişim = function () {
     return Math.floor(Math.random() * iletişim_collection.length);
 }
+
+var rand_gizlikanallar = function () {
+    return Math.floor(Math.random() * gizlikanallar_collection.length);
+}
+
 
 bot.on('message', (msg) => {
     var kanallar = "kanallar";
