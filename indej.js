@@ -93,10 +93,16 @@ bot.on('message', (msg) => {
            [                  
               {
                 text: 'Behzat Ç.',
-                url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
+                url: 'https://t.me/joinchat/AAAAAFMpqpwDzVcJ16xxVA'
               },{
                 text: 'Diğer Yerli Diziler',
-                url: 'https://t.me/joinchat/AAAAAErjynpH6TWT0buuJw'
+                url: 'https://t.me/joinchat/AAAAAErjyno3jmPG_OJW2A'
+              }
+           ],
+           [                  
+              {
+                text: 'Grup'
+                url: 'https://t.me/dizifilm
               }
             ]]
           }
