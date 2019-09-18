@@ -197,7 +197,7 @@ bot.on('message', (msg) => {
                 url: 'http://t.me/dizifilmarsiv'
               },{
                 text: 'Dizi Film Linkleri',
-                url: 'http://t.me/netflixturkiye'
+                url: 'http://t.me/NetfIixTurkiye'
               }
            ],
            [
