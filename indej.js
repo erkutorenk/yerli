@@ -87,7 +87,7 @@ bot.on('message', (msg) => {
             inline_keyboard: [[
               {
                 text: 'Yerli Diziler',
-                callback_data: 'A1'
+                callback_data: 
               }
            ],
            [                  
