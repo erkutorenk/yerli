@@ -86,7 +86,7 @@ bot.on('message', (msg) => {
          reply_markup: {
             inline_keyboard: [[
               {
-                text: 'Yerli Diziler'
+                text: 'Yerli Diziler',
                 callback_data: 'A1'
               }
            ],
