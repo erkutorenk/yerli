@@ -102,7 +102,7 @@ bot.on('message', (msg) => {
            [                  
               {
                 text: 'Grup',
-                url: 'https://t.me/dizifilm
+                url: 'https://t.me/dizifilm'
               }
             ]]
           }
