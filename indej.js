@@ -160,6 +160,24 @@ bot.on('message', (msg) => {
                 text: "The Handmaid's Tale",
                 url: 'http://t.me/handmaidstaletr' 
               }
+           ],
+           [
+              {
+                text: 'The Witcher',
+                url: 'http://t.me/thewitchertr'
+              },{
+                text: 'Band of Brothers',
+                url: 'http://t.me/bandofbrotherstr' 
+              }
+           ],
+           [
+              {
+                text: 'Sherlock',
+                url: 'http://t.me/sherlocktr'
+              },{
+                text: 'Prison Break',
+                url: 'http://t.me/prisonbreaktr' 
+              }
             ]]
           }
         });           
