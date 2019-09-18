@@ -51,6 +51,9 @@ bot.on('message', (msg) => {
 });
 
 
+bot.sendMessage(message.chat.id, "/start", Geri);
+
+
 bot.on('message', (msg) => {
     var grubumuz = "grubumuz";
     if (msg.text.toString().toLowerCase().indexOf(grubumuz) === 0) {
