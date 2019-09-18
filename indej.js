@@ -28,10 +28,6 @@ var rand_iletişim = function () {
     return Math.floor(Math.random() * iletişim_collection.length);
 }
 
-var rand_yerli = function () {
-    return Math.floor(Math.random() * yerli_collection.length);
-}
-
 
 bot.on('message', (msg) => {
     var kanallar = "kanallar";
