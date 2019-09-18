@@ -178,6 +178,12 @@ bot.on('message', (msg) => {
                 text: 'Prison Break',
                 url: 'http://t.me/prisonbreaktr' 
               }
+           ],
+           [
+              {
+                text: 'Yabancı Dizi/Film',
+                url: 'http://t.me/dizifilm'
+              }
             ]]
           }
         });           
