@@ -9,7 +9,7 @@ bot.onText(/\/start/, (msg) => {
     bot.sendMessage(msg.chat.id, "Merhaba, " + msg.from.first_name + ". \nKanallarımıza alttaki butonlardan ulaşabilirsin. ;)", {
         "reply_markup": {
              resize_keyboard: true,
-            "keyboard": [["Kanallar"], ["Grubumuz", "iletişim", "Yerli Kanallar" ]]
+            "keyboard": [["Dizi Kanalları"], ["Grubumuz", "iletişim", "Yerli Kanallar" ]]
         }
     });
 
@@ -33,24 +33,18 @@ var rand_yerli = function () {
 }
 
 
+
 bot.on('message', (msg) => {
     var kanallar = "kanallar";
     if (msg.text.toString().toLowerCase().indexOf(kanallar) === 0) {
-        bot.sendDocument(msg.chat.id, "CAADAgAEAQAC_enaJt9auPo0lN67FgQ", {
-         reply_markup: {
-            inline_keyboard: [[
-              {
-                text: 'Behzat Ç.',
-                url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
-              },{
-                text: 'Yerli Diziler',
-                url: 'https://t.me/joinchat/AAAAAErjynpH6TWT0buuJw'
-              }
-            ]]
-          }
-        });           
+        bot.sendMessage(msg.chat.id, "Here is your house song ", {
+            "reply_markup": {
+                "keyboard": [["Yabancı"], ["Yerli"]]
+            }
+        });
     }
 });
+
 
 
 bot.on('message', (msg) => {
@@ -96,5 +90,6 @@ bot.on('message', (msg) => {
         });           
     }
 });
+
 
 
