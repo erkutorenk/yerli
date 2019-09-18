@@ -36,6 +36,9 @@ var rand_yabancı = function () {
     return Math.floor(Math.random() * yabancı_collection.length);
 }
 
+var rand_geri = function () {
+    return Math.floor(Math.random() * geri_collection.length);
+}
 
 
 bot.on('message', (msg) => {
@@ -49,9 +52,6 @@ bot.on('message', (msg) => {
         });
     }
 });
-
-
-bot.sendMessage(message.chat.id, "/start", Geri);
 
 
 bot.on('message', (msg) => {
@@ -124,5 +124,17 @@ bot.on('message', (msg) => {
     }
 });
 
+
+bot.on('message', (msg) => {
+    var geri = "geri";
+    if (msg.text.toString().toLowerCase().indexOf(geri) === 0) {
+        bot.sendDocument(msg.chat.id, "Ana menü", {
+         "reply_markup": {
+             resize_keyboard: true,
+            "keyboard": [["Kanallar"], ["Grubumuz", "iletişim"]]
+          }
+        });           
+    }
+});
 
 
