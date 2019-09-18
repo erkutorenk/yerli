@@ -15,6 +15,7 @@ bot.onText(/\/start/, (msg) => {
 
 });
 
+
 var rand_kanallar = function () {
     return Math.floor(Math.random() * kanallar_collection.length);
 }
