@@ -33,8 +33,8 @@ bot.on('message', (msg) => {
     var kanallar = "kanallar";
     if (msg.text.toString().toLowerCase().indexOf(kanallar) === 0) {
         bot.sendMessage(msg.chat.id, "Hangisi ? ", {
-             resize_keyboard: true,
             "reply_markup": {
+                 resize_keyboard: true,
                 "keyboard": [["Yerli", "Yabancı"]]
             }
         });
