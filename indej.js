@@ -133,6 +133,15 @@ bot.on('message', (msg) => {
                 text: 'Westworld',
                 url: 'http://t.me/westworldtr' 
               }
+           ],
+           [
+              {
+                text: 'Stranger Things',
+                url: 'http://t.me/strangerthingstr'
+              },{
+                text: 'Dark',
+                url: 'http://t.me/darkdizi' 
+              }
             ]]
           }
         });           
