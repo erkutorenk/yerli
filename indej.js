@@ -30,7 +30,7 @@ var rand_iletişim = function () {
 bot.on('message', (msg) => {
     var kanallar = "kanallar";
     if (msg.text.toString().toLowerCase().indexOf(kanallar) === 0) {
-        bot.sendMessage(msg.chat.id, "İyi Seyirler " + msg.from.first_name + ". \n"CAADAgAEAQAC_enaJt9auPo0lN67FgQ", {
+        bot.sendMessage(msg.chat.id, "CAADAgAEAQAC_enaJt9auPo0lN67FgQ", {
          reply_markup: {
             inline_keyboard: [[
               {
