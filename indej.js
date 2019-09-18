@@ -170,7 +170,7 @@ bot.on('message', (msg) => {
 bot.on('message', (msg) => {
     var geri = "geri";
     if (msg.text.toString().toLowerCase().indexOf(geri) === 0) {
-        bot.sendMessage(msg.chat.id, "Lütfen birini seçin", {
+        bot.sendMessage(msg.chat.id, "Ana menü", {
          "reply_markup": {
              resize_keyboard: true,
             "keyboard": [["Kanallar"], ["Grubumuz", "iletişim"]]
