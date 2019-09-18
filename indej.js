@@ -86,8 +86,7 @@ bot.on('message', (msg) => {
          reply_markup: {
             inline_keyboard: [[
               {
-                text: 'Yerli Diziler',
-                url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
+                text: 'Yerli Diziler'
               }
            ],
            [                  
