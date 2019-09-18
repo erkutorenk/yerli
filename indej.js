@@ -87,7 +87,7 @@ bot.on('message', (msg) => {
             inline_keyboard: [[
               {
                 text: 'Yerli Diziler',
-                callback_data: 
+                callback_data: 'dizifilm'
               }
            ],
            [                  
@@ -111,6 +111,12 @@ bot.on('message', (msg) => {
         bot.sendDocument(msg.chat.id, "CAADAgAEAQAC_enaJt9auPo0lN67FgQ", {
          reply_markup: {
             inline_keyboard: [[
+              {
+                text: 'Yabancı Diziler',
+                callback_data: 'dizifilm'
+              }
+           ],
+           [      
               {
                 text: 'La Casa de Papel',
                 url: 'http://t.me/lacasadepapeltr'
