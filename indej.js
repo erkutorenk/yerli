@@ -74,7 +74,7 @@ bot.on('message', (msg) => {
 bot.on('message', (msg) => {
     var yerli = "yerli";
     if (msg.text.toString().toLowerCase().indexOf(yerli) === 0) {
-        bot.sendDocument(msg.chat.id, "CAADAgADBwEAAv3p2iY_lT3SAtn7vhYE", "CAADAgADCQEAAv3p2ia3IZ2sKF_lohYE", {
+        bot.sendDocument(msg.chat.id, "CAADAgADBwEAAv3p2iY_lT3SAtn7vhYE", {
          reply_markup: {
             inline_keyboard: [[
               {
