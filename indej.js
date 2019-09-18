@@ -6,7 +6,7 @@ const bot = new TelegramBot(token, {polling: true})
 
 
 bot.onText(/\/start/, (msg) => {
-    bot.sendMessage(msg.chat.id, "Merhaba, " + msg.from.first_name + ". kanallarımıza alttaki butonlardan ulaşabilirsin. ;)", {
+    bot.sendMessage(msg.chat.id, "Merhaba, " + msg.from.first_name + ". Kanallarımıza alttaki butonlardan ulaşabilirsin. ;)", {
         "reply_markup": {
              resize_keyboard: true,
             "keyboard": [["Kanallar"], ["Grubumuz", "iletişim"]]
@@ -30,7 +30,7 @@ var rand_iletişim = function () {
 bot.on('message', (msg) => {
     var kanallar = "kanallar";
     if (msg.text.toString().toLowerCase().indexOf(kanallar) === 0) {
-        bot.sendMessage(msg.chat.id, "CAADAgAEAQAC_enaJt9auPo0lN67FgQ", {
+        bot.sendDocument(msg.chat.id, "CAADAgAEAQAC_enaJt9auPo0lN67FgQ", {
          reply_markup: {
             inline_keyboard: [[
               {
