@@ -37,10 +37,9 @@ var rand_yerli = function () {
 bot.on('message', (msg) => {
     var kanallar = "kanallar";
     if (msg.text.toString().toLowerCase().indexOf(kanallar) === 0) {
-        bot.sendMessage(msg.chat.id, "Here is your house song ", {
+        bot.sendMessage(msg.chat.id, "Yerli mi Yabancı mı ? ", {
             "reply_markup": {
-                 resize_keyboard: true,
-                "keyboard": [["Yabancı", "Yerli"]]
+                "keyboard": [["Yabancı"], ["Yerli"]]
             }
         });
     }
