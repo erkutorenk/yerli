@@ -1,22 +1,22 @@
 const TelegramBot = require('node-telegram-bot-api')
 
-const token = '885225327:AAE98jWiyaELsIwOsmuHCeGKOqWO6l19IHM'
+const token = '946950620:AAHxREIF9bZimQVk5k6-C0wfgL5ft_Tzam0'
 
 const bot = new TelegramBot(token, {polling: true})
 
 
 bot.onText(/\/start/, (msg) => {
-    bot.sendMessage(msg.chat.id, "Merhaba, " + msg.from.first_name + ". Gizli kanalların davet bağlantılarına alttaki butonlardan ulaşabilirsin. ;)", {
+    bot.sendMessage(msg.chat.id, "Merhaba, " + msg.from.first_name + ". kanallarımıza alttaki butonlardan ulaşabilirsin. ;)", {
         "reply_markup": {
              resize_keyboard: true,
-            "keyboard": [["Bağlantılar"], ["Grubumuz", "iletişim"]]
+            "keyboard": [["Kanallar"], ["Grubumuz", "iletişim"]]
         }
     });
 
 });
 
-var rand_bağlantılar = function () {
-    return Math.floor(Math.random() * bağlantılar_collection.length);
+var rand_kanallar = function () {
+    return Math.floor(Math.random() * kanallar_collection.length);
 }
 
 var rand_grubumuz = function () {
@@ -28,9 +28,9 @@ var rand_iletişim = function () {
 }
 
 bot.on('message', (msg) => {
-    var bağlantılar = "bağlantılar";
-    if (msg.text.toString().toLowerCase().indexOf(bağlantılar) === 0) {
-        bot.sendMessage(msg.chat.id, "İyi Seyirler " + msg.from.first_name + ". \nGrubumuzu takip etmeyi unutma.", {
+    var kanallar = "kanallar";
+    if (msg.text.toString().toLowerCase().indexOf(kanallar) === 0) {
+        bot.sendMessage(msg.chat.id, "İyi Seyirler " + msg.from.first_name + ". \n"CAADAgAEAQAC_enaJt9auPo0lN67FgQ", {
          reply_markup: {
             inline_keyboard: [[
               {
