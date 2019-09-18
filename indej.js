@@ -187,8 +187,11 @@ bot.on('message', (msg) => {
            ],
            [
               {
-                text: 'Arşiv',
+                text: 'Haberler',
                 url: 'http://t.me/dizifilmarsiv'
+              },{
+                text: 'Dizi Film Linkleri',
+                url: 'http://t.me/netflixturkiye'
               }
            ],
            [
