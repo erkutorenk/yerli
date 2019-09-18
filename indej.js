@@ -128,7 +128,10 @@ bot.on('message', (msg) => {
            [
               {
                 text: 'Chernobyl',
-                url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
+                url: 'https://t.me/chernobyltr'
+              },{
+                text: 'Westworld',
+                url: 'http://t.me/westworldtr' 
               }
             ]]
           }
