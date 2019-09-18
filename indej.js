@@ -28,8 +28,8 @@ var rand_iletişim = function () {
     return Math.floor(Math.random() * iletişim_collection.length);
 }
 
-var rand_yerli kanallar = function () {
-    return Math.floor(Math.random() * yerli kanallar_collection.length);
+var rand_yerli = function () {
+    return Math.floor(Math.random() * yerli_collection.length);
 }
 
 
@@ -79,8 +79,8 @@ bot.on('message', (msg) => {
 
 
 bot.on('message', (msg) => {
-    var yerli kanallar = "yerli kanallar";
-    if (msg.text.toString().toLowerCase().indexOf(yerli kanallar) === 0) {
+    var yerli = "yerli";
+    if (msg.text.toString().toLowerCase().indexOf(yerli) === 0) {
         bot.sendDocument(msg.chat.id, "CAADAgAEAQAC_enaJt9auPo0lN67FgQ", {
          reply_markup: {
             inline_keyboard: [[
