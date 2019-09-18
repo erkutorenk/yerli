@@ -32,7 +32,7 @@ var rand_iletişim = function () {
 bot.on('message', (msg) => {
     var kanallar = "kanallar";
     if (msg.text.toString().toLowerCase().indexOf(kanallar) === 0) {
-        bot.sendMessage(msg.chat.id, "Lütfen seçin", {
+        bot.sendMessage(msg.chat.id, "Lütfen birini seçin", {
             "reply_markup": {
                  resize_keyboard: true,
                 "keyboard": [["Yerli", "Yabancı"]]
