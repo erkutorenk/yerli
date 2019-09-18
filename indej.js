@@ -89,12 +89,6 @@ bot.on('message', (msg) => {
                 text: 'Diğer Yerli Diziler',
                 url: 'https://t.me/joinchat/AAAAAErjynpH6TWT0buuJw'
               }
-           ],
-           [
-              {
-                text: 'Chernobyl',
-                url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
-              }
             ]]
           }
         });           
@@ -114,6 +108,12 @@ bot.on('message', (msg) => {
               },{
                 text: 'Mindhunter',
                 url: 'http://t.me/mindhunter2017'
+              }
+           ],
+           [
+              {
+                text: 'Chernobyl',
+                url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
               }
             ]]
           }
