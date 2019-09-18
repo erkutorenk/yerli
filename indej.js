@@ -109,8 +109,9 @@ bot.on('message', (msg) => {
                 text: 'Mindhunter',
                 url: 'http://t.me/mindhunter2017'
               }
+            ], [
               {
-                text: 'Chernobyl',
+                text: 'Chernobyl'
                 url: 'http://t.me/chernobyltr'
               }
             ]]
