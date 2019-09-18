@@ -170,11 +170,14 @@ bot.on('message', (msg) => {
 bot.on('message', (msg) => {
     var geri = "geri";
     if (msg.text.toString().toLowerCase().indexOf(geri) === 0) {
+        bot.sendMessage(msg.chat.id, "Lütfen birini seçin", {
          "reply_markup": {
              resize_keyboard: true,
             "keyboard": [["Kanallar"], ["Grubumuz", "iletişim"]]
-          }          
+           } 
+      });       
     }
 });
+
 
 
