@@ -58,7 +58,7 @@ bot.on('message', (msg) => {
 bot.on('message', (msg) => {
     var iletişim = "iletişim";
     if (msg.text.toString().toLowerCase().indexOf(iletişim) === 0) {
-        bot.sendMessage(msg.chat.id, "Yabancı Dizi/Film", {
+        bot.sendDocument(msg.chat.id, "CAADAgAD8gAD_enaJtQUkuAXlxTfFgQ", {
          reply_markup: {
             inline_keyboard: [[
               {
