@@ -44,7 +44,7 @@ bot.on('message', (msg) => {
         bot.sendMessage(msg.chat.id, "Lütfen birini seçin", {
             "reply_markup": {
                  resize_keyboard: true,
-                "keyboard": [["Yerli", "Yabancı"]]
+                "keyboard": [["Yerli", "Yabancı"], ["Geri"]]
             }
         });
     }
