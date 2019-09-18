@@ -9,7 +9,7 @@ bot.onText(/\/start/, (msg) => {
     bot.sendMessage(msg.chat.id, "Merhaba, " + msg.from.first_name + ". \nKanallarımıza alttaki butonlardan ulaşabilirsin. ;)", {
         "reply_markup": {
              resize_keyboard: true,
-            "keyboard": [["Dizi Kanalları"], ["Grubumuz", "iletişim"]]
+            "keyboard": [["Kanallar"], ["Grubumuz", "iletişim"]]
         }
     });
 
@@ -34,7 +34,7 @@ bot.on('message', (msg) => {
     if (msg.text.toString().toLowerCase().indexOf(kanallar) === 0) {
         bot.sendMessage(msg.chat.id, "Here is your house song ", {
             "reply_markup": {
-                "keyboard": [["More house"], ["Back to choose style"]]
+                "keyboard": [["Yabancı"], ["Yerli"]]
             }
         });
     }
