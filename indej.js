@@ -103,11 +103,14 @@ bot.on('message', (msg) => {
          reply_markup: {
             inline_keyboard: [[
               {
-                text: 'Behzat Ç.',
-                url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
+                text: 'La Casa de Papel',
+                url: 'http://t.me/lacasadepapeltr'
               },{
-                text: 'Diğer Yerli Diziler',
-                url: 'https://t.me/joinchat/AAAAAErjynpH6TWT0buuJw'
+                text: 'Mindhunter',
+                url: 'http://t.me/mindhunter2017'
+              },{
+                text: 'Chernobyl',
+                url: 'http://t.me/chernobyltr'
               }
             ]]
           }
