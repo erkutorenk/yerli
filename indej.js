@@ -77,4 +77,23 @@ bot.on('message', (msg) => {
 });
 
 
+bot.on('message', (msg) => {
+    var gizlikanallar = "gizli kanallar";
+    if (msg.text.toString().toLowerCase().indexOf(kanallar) === 0) {
+        bot.sendDocument(msg.chat.id, "CAADAgAEAQAC_enaJt9auPo0lN67FgQ", {
+         reply_markup: {
+            inline_keyboard: [[
+              {
+                text: 'Behzat Ç.',
+                url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
+              },{
+                text: 'Yerli Diziler',
+                url: 'https://t.me/joinchat/AAAAAErjynpH6TWT0buuJw'
+              }
+            ]]
+          }
+        });           
+    }
+});
+
 
