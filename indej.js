@@ -89,6 +89,11 @@ bot.on('message', (msg) => {
                 text: 'Diğer Yerli Diziler',
                 url: 'https://t.me/joinchat/AAAAAErjynpH6TWT0buuJw'
               }
+           },
+              {
+                text: 'Chernobyl',
+                url: 'https://t.me/joinchat/AAAAAFMpqpyq42v6aJhgKA'
+              }
             ]]
           }
         });           
