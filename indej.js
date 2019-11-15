@@ -4,6 +4,7 @@ const token = '946950620:AAEB9cuo_cWGRhjVklfT7r6TLLsJ7CIuxwg'
 
 const bot = new TelegramBot(token, {polling: true})
 
+NTBA_FIX_319=1
 
 bot.onText(/\/start/, (msg) => {
     bot.sendMessage(msg.chat.id, "Merhaba, " + msg.from.first_name + ". \nKanallarımıza alttaki butonlardan ulaşabilirsin. ;)", {
