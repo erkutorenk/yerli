@@ -4,7 +4,6 @@ const token = '946950620:AAEB9cuo_cWGRhjVklfT7r6TLLsJ7CIuxwg'
 
 const bot = new TelegramBot(token, {polling: true})
 
-P = require 'bluebird'
 T = require 'node-telegram-bot-api'
 
 bot.onText(/\/start/, (msg) => {
