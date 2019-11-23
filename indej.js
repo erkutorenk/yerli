@@ -39,6 +39,10 @@ var rand_yabancı = function () {
     return Math.floor(Math.random() * yabancı_collection.length);
 }
 
+var rand_belgesel = function () {
+    return Math.floor(Math.random() * belgesel_collection.length);
+}
+
 var rand_geri = function () {
     return Math.floor(Math.random() * geri_collection.length);
 }
@@ -50,7 +54,7 @@ bot.on('message', (msg) => {
         bot.sendMessage(msg.chat.id, "Lütfen birini seçin", {
             "reply_markup": {
                  resize_keyboard: true,
-                "keyboard": [["Yerli", "Yabancı"], ["Geri dön"]]
+                "keyboard": [["Yerli", "Yabancı", "Belgesel"], ["Geri dön"]]
             }
         });
     }
@@ -64,6 +68,12 @@ bot.on('message', (msg) => {
     }
 });
 
+bot.on('message', (msg) => {
+    var belgesel = "belgesel";
+    if (msg.text.toString().toLowerCase().indexOf(belgesel) === 0) {
+        bot.sendMessage(msg.chat.id, "t.me/belgeseller");
+    }
+});
 
 bot.on('message', (msg) => {
     var iletişim = "iletişim";
