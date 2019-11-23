@@ -71,7 +71,7 @@ bot.on('message', (msg) => {
 bot.on('message', (msg) => {
     var belgesel = "belgesel";
     if (msg.text.toString().toLowerCase().indexOf(belgesel) === 0) {
-        bot.sendMessage(msg.chat.id, "Belgeseller" {
+        bot.sendMessage(msg.chat.id, "Belgeseller", {
          reply_markup: {
             inline_keyboard: [[
               {
