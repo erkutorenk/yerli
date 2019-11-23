@@ -80,8 +80,9 @@ bot.on('message', (msg) => {
                 url: 't.me/belgeseller'
               }
             ]]
+           }
         });         
-    }
+    })
 });
 
 bot.on('message', (msg) => {
@@ -95,8 +96,9 @@ bot.on('message', (msg) => {
                 url: 't.me/dizifilms'
               }
             ]]
+           }
         });         
-    }
+    })
 });
 
 
