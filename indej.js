@@ -94,8 +94,7 @@ bot.on('message', (msg) => {
                 url: 't.me/dizifilms'
               }
             ]]
-          }
-        });           
+        });         
     }
 });
 
