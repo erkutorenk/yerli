@@ -1,4 +1,3 @@
-
 {
   "alias": "www.your-site.com",
   "version": 2,
