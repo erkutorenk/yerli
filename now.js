@@ -1,8 +1,11 @@
-BRANCH
- master
-11dd008 — Update blacklistban.js
-Build
-Runtime
-No logs to show.
-Deployment Queued
-The deployment is waiting for others to complete. Add more Concurrent Builds Slots to speed up this proces
+
+{
+  "alias": "www.your-site.com",
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@frontity/now"
+    }
+  ]
+}
