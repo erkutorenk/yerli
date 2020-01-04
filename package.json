@@ -4,7 +4,8 @@
   "description": "",
   "main": "indej.js",
   "scripts": {
-    "start": "node index.js"
+    "build": "node indej.js",
+    "start": "node indej.js"
   },
   "engines": {
     "node": "12.10.0"
