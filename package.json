@@ -4,6 +4,7 @@
   "description": "",
   "main": "indej.js",
   "scripts": {
+    "build": "node indej.js",
     "start": "node indej.js"
   },
   "engines": {
