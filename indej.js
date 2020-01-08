@@ -119,7 +119,7 @@ bot.on('message', (msg) => {
                 url: 'https://t.me/joinchat/AAAAAFMpqpwDzVcJ16xxVA'
               },{
                 text: 'Diğer Yerli Diziler',
-                url: 'https://t.me/joinchat/AAAAAErjyno3jmPG_OJW2A'
+                url: 'https://t.me/joinchat/AAAAAErjynqW6jDA1M6VHA'
               }
            ],
            [                  
