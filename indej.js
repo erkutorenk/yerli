@@ -231,6 +231,7 @@ bot.on('message', (msg) => {
                 text: "Don't F*** With Cats"
                 URL: 'http://t.me/dontfwithcats'
               }
+           ],
             ]]
           }
         });           
