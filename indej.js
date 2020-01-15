@@ -228,7 +228,7 @@ bot.on('message', (msg) => {
                 text: 'Film Arşivi',
                 url: 'http://t.me/yabancifilm'
               },{
-                text: "Don't F*** With Cats"
+                text: "Don't F*** With Cats",
                 url: "http://t.me/dontfwithcats"
               }
            
