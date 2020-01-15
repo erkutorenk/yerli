@@ -229,9 +229,9 @@ bot.on('message', (msg) => {
                 url: 'http://t.me/yabancifilm'
               },{
                 text: "Don't F*** With Cats"
-                URL: 'http://t.me/dontfwithcats'
+                url: "http://t.me/dontfwithcats"
               }
-           ],
+           
             ]]
           }
         });           
