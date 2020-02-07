@@ -116,7 +116,7 @@ bot.on('message', (msg) => {
            [                  
               {
                 text: 'Behzat Ç.',
-                url: 'https://t.me/joinchat/AAAAAFMpqpwDzVcJ16xxVA'
+                url: 'https://t.me/joinchat/AAAAAFMpqpwCWcxRvJLrLA'
               },{
                 text: 'Diğer Yerli Diziler',
                 url: 'https://t.me/joinchat/AAAAAErjynqVg6q3QqH68A'
