@@ -210,6 +210,15 @@ bot.on('message', (msg) => {
            ],
            [
               {
+                text: 'The Outsider',
+                url: 'https://t.me/theoutsiderTR'
+              },{
+                text: 'Hunters',
+                url: 'https://t.me/HuntersTR' 
+              }
+           ],
+           [
+              {
                 text: 'Grup',
                 url: 'http://t.me/dizifilm'
               }
