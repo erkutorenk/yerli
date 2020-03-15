@@ -241,7 +241,14 @@ bot.on('message', (msg) => {
                 url: "http://t.me/dontfwithcats"
               }
            
-            ]]
+           ],
+           [
+              {
+                text: 'Telifli & Kısa Filmler',
+                url: 'http://t.me/kisafilmler'
+              }
+           ]]
+
           }
         });           
     }
