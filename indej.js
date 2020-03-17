@@ -178,7 +178,7 @@ bot.on('message', (msg) => {
                 url: 'http://t.me/blackmirrortr'
               },{
                 text: 'Mr. Robot',
-                url: 'http://t.me/mrrobottr' 
+                url: 'http://t.me/mrrobotdizi' 
               }
            ],
            [
