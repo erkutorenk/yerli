@@ -151,7 +151,7 @@ bot.on('message', (msg) => {
                 url: 'http://t.me/lacasadepapeltr'
               },{
                 text: 'Mindhunter',
-                url: 'http://t.me/mindhunter2017'
+                url: 'http://t.me/mindhuntertr'
               }
            ],
            [
