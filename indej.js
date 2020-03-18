@@ -247,8 +247,16 @@ bot.on('message', (msg) => {
                 text: 'Telifli & Kısa Filmler',
                 url: 'http://t.me/kisafilmler'
               }
-           ]]
-
+           ],
+           [
+              {
+                text: 'Hannibal',
+                url: 'http://t.me/hannibaltr'
+              },{
+                text: "Dogs of Berlin",
+                url: "http://t.me/dogsofberlintr"
+              }        
+           ]]            
           }
         });           
     }
