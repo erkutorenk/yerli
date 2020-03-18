@@ -256,7 +256,16 @@ bot.on('message', (msg) => {
                 text: "Dogs of Berlin",
                 url: "http://t.me/dogsofberlintr"
               }        
-           ]]            
+           ],
+           [   
+              {
+                text: 'True Detective',
+                url: 'https://t.me/joinchat/AAAAAEd0VNnxp8BQC0r00g'
+              },{
+                text: "Dracula",
+                url: "https://t.me/dracula2020tr"
+              }
+           ]]        
           }
         });           
     }
