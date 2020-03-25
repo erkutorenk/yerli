@@ -147,6 +147,12 @@ bot.on('message', (msg) => {
            ],
            [      
               {
+                text: 'Lost in Space 🛸',
+                url: 'http://t.me/lostinspacetr'
+              }
+           ],
+           [
+              {
                 text: 'La Casa de Papel',
                 url: 'http://t.me/lacasadepapeltr'
               },{
